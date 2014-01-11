@@ -322,7 +322,7 @@ static final class TransientHashMap extends ATransientMap {
 	}
 }
 
-static interface INode extends Serializable {
+private static interface INode extends Serializable {
 	INode assoc(int shift, int hash, Object key, Object val, Box addedLeaf);
 
 	INode without(int shift, int hash, Object key);
